@@ -1,8 +1,7 @@
 const { request } = require("graphql-request");
 
-const { host } = require("./constants");
-const { User } = require("../entity/User");
-const { startServer } = require("../startServer");
+const { User } = require("../../entity/User");
+const { startServer } = require("../../startServer");
 
 let getHost = () => "";
 
