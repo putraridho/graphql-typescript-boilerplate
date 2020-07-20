@@ -32,12 +32,11 @@
     "graphql-yoga": "^1.18.3",
     "pg": "^8.2.1",
     "reflect-metadata": "^0.1.13",
-    "typeorm": "0.2.25",
-    "uuid": "^8.2.0"
+    "typeorm": "0.2.25"
   },
   "scripts": {
     "start": "NODE_ENV=development nodemon --exec ts-node --files src/index.ts",
-    "test": "NODE_ENV=test jest",
+    "test": "NODE_ENV=test jest --forceExit",
     "gen-schema-types": "gql2ts src/schema.graphql -o src/types/schema.d.ts"
   }
 }
